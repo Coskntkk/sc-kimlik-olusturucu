@@ -1,0 +1,163 @@
+@import url("https://fonts.cdnfonts.com/css/ocr-a-extended");
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "OCR A Extended", sans-serif;
+}
+
+/* ------------------- Header ------------------- */
+.form {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputline {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input {
+    width: 50%;
+}
+
+/* ------------------- Main ------------------- */
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+}
+
+.card {
+    width: 600px;
+    height: 320px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    font-size: larger;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("sc.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    opacity: 0.3;
+}
+
+.cardbody {
+    position: absolute;
+    width: 580px;
+    height: 300px;
+    padding: 10px;
+}
+
+.title {
+    width: 100%;
+    height: 10%;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.body {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.photo {
+    width: 25%;
+    height: 90%;
+    border: 5px solid red;
+    box-sizing: border-box;
+}
+
+.data {
+    width: 75%;
+    height: 90%;
+    position: relative;
+}
+
+.info {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.num {
+    color: red;
+    position: absolute;
+    top: -15;
+    right: 0;
+    font-weight: bold;
+}
+
+table {
+    width: 90%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+table tbody tr td {
+    font-size: 1.5rem;
+}
+
+.null {
+    color: transparent;
+}
+
+/* ------------------- Footer ------------------- */
+footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ------------------- Shared ------------------- */
+button, ::-webkit-file-upload-button  {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: lightskyblue;
+}

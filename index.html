@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form -->
+    <div class="form">
+        <h1>Semih Cumhuriyeti Kimlik Kartı Oluşturucu</h1>
+        <div class="inputs">
+            <div class="inputline">
+                <label for="name" class="label">Adı</label>
+                <input type="text" id="nameInput" class="input" placeholder="Semih" maxlength="15" >
+            </div>
+            <div class="inputline">
+                <label for="surname" class="label">Soyadı</label>
+                <input type="text" id="surnameInput" class="input" placeholder="Semihoğlu" maxlength="15" >
+            </div>
+            <div class="inputline">
+                <label for="upload" class="label">Resim Yükle</label>
+                <input type="file" name="upload" id="upload" class="input" accept="image/*" onchange="loadFile(event)">
+                <button id="cancel" style="display: none;">Sil</button>
+            </div>
+            <div class="inputline" style="align-self: center;">
+                <button id="download">İndir</button>
+            </div>
+        </div>
+    </div>
+    <!-- Main -->
+    <main class="main">
+        <div class="card">
+            <div class="bg"></div>
+            <div class="cardbody">
+                <h1 class="title">Semih Cumhuriyeti Kimlik Kartı</h1>
+                <div class="body">
+                    <img src="semih.png" alt="Semih" class="photo" id="photo"/>
+                    <div class="data">
+                        <div class="info">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 10%;">Adı</td>
+                                        <td>:</td>
+                                        <td id="name">Semih</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soyadı</td>
+                                        <td>:</td>
+                                        <td id="surname">Semihoglu</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="null">&#8709;</td>
+                                        <td class="null">&#8709;</td>
+                                        <td class="null">&#8709;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sicil No</td>
+                                        <td>:</td>
+                                        <td id="sicilNo"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="null">&#8709;</td>
+                                        <td class="null">&#8709;</td>
+                                        <td class="null">&#8709;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Verilis</td>
+                                        <td class="null">&#8709;</td>
+                                        <td class="null">&#8709;</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tarihi</td>
+                                        <td>:</td>
+                                        <td id="verilisTarihi"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <h3 class="num" id="titleNo"></h3>
+                    </div>
+                </div>
+                <img src="barcode.png" alt="barcode" class="barcode"/>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Semih Cumhuriyeti</p>
+        <a href="#">Github</a>
+    </footer>
+</body>
+<script src="http://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="index.js"></script>
+</html>
