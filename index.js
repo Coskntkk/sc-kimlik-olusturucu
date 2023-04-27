@@ -32,6 +32,7 @@ document.getElementById("cancel").addEventListener("click", (e) => {
 
 /// Final
 document.getElementById("download").addEventListener("click", () => {
+    if (window.innerWidth < 768) document.getElementById("card").style.scale = 1;
     html2canvas(document.querySelector(".card")).then(canvas => {
         let image = canvas.toDataURL("image/png", 1.0).replace("image/png", "image/octet-stream");
         let link = document.createElement('a');
@@ -39,4 +40,5 @@ document.getElementById("download").addEventListener("click", () => {
         link.href = image;
         link.click();
     });
+    if (window.innerWidth < 768) document.getElementById("card").style.scale = 0.5;
 });

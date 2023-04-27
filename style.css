@@ -48,7 +48,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 65%;
+    height: 60%;
 }
 
 .card {
@@ -187,9 +187,6 @@ button, ::-webkit-file-upload-button  {
     }
     .inputline {
         width: 80%;
-    }
-    .main {
-        height: 60%;
     }
     .card {
         scale: 0.5;
