@@ -161,3 +161,25 @@ button, ::-webkit-file-upload-button  {
     transition: all 0.3s ease-in-out;
     background-color: lightskyblue;
 }
+
+/* ------------------- Media Queries ------------------- */
+@media screen and (max-width: 768px) {
+    .form {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .form h1 {
+        scale: 0.5;
+        width: 100%;
+        text-align: center;
+    }
+    .inputline {
+        width: 80%;
+    }
+    .main {
+        height: 60%;
+    }
+    .card {
+        scale: 0.5;
+    }
+}
