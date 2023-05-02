@@ -2,7 +2,7 @@
 (() => {
     document.getElementById("titleNo").innerHTML = Math.floor(Math.random() * 10000000);
     document.getElementById("sicilNo").innerHTML = Math.floor(Math.random() * 1000000) + "-" + Math.floor(Math.random() * 1000);
-    document.getElementById("verilisTarihi").innerHTML = new Date().getDate() + "." + new Date().getMonth() + "." + new Date().getFullYear();
+    document.getElementById("verilisTarihi").innerHTML = new Date().getDate() + "." + (new Date().getMonth()+1) + "." + new Date().getFullYear();
 })();
 
 /// Input Events
